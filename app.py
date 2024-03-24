@@ -7,7 +7,7 @@ import pandas as pd
 import datetime
 import joblib
 
-
+joblib.dump(transformer, 'transformer.joblib')
 # Load the transformer and model
 transformer = joblib.load('transformer.joblib')
 model = joblib.load('decision_tree_model.joblib')
